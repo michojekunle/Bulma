@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form With Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body >
+    <!--Bulma Forms -->
+    <nav class="navbar box" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Documentation
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="card container box">
+        <div class="card-content">
+          <p class="title">
+            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+          </p>
+          <p class="subtitle">
+            Jeff Atwood
+          </p>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+            </span>
+          </p>
+          <p class="card-footer-item">
+            <span>
+              Share on <a href="#">Facebook</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+
+      <form class="container box">
+        <h1 class="title is-2">Form With Bulma || Create An Account</h1>
+        <div class="field">
+            <label for="firstname" class="label">Firstname: </label>
+            <div class="control">
+                <input class="input" type="text" name="firstname" id="firstname" placeholder="Enter your First name here..">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="lastname">Lastname: </label>
+            <div class="control">
+                <input class="input" type="text" name="lastname" id="lastname" placeholder="Enter your Last name here..">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="email">Email Address: </label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="email" name="email" id="email" placeholder="Email Address">
+                <span class="icon is-large is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-large is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="DOB">Date Of Birth: </label>
+            <div class="control">
+                <input class="input" type="date" name="DOB" id="DOB" >
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="password">Password: </label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="password" name="password" id="password">
+                <span class="icon is-large is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-large is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="cofirm-password">Confirm Password: </label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="password" name="confirm-password" id="confirm-password">
+                <span class="icon is-large is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-large is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label" for="message">Leave A message</label>
+            <textarea class="textarea" name="message" id="message" placeholder="Leave a message"></textarea>
+        </div>
+
+        <div class="block">
+            <input type="checkbox" name="agreedToT&C"> <span>I Agree to <a href="https://www.google.com" target="_blank">Terms and Conditions</a></span> <br>
+        </div>
+        
+        <div class="buttons ">
+            <input class="button is-success" type="submit" value="Create Your Account">
+            <input class="button is-danger is-light" type="reset" value="Clear Data">
+        </div>
+    </form>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
